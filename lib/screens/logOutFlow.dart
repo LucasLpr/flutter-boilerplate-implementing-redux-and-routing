@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:boilerplate/utils/constants.dart';
 
-class LoggedOutFlow extends StatelessWidget {
+class LogOutFlow extends StatelessWidget {
 
-  void onNavigateToLoggedFlow(context) {
+  void onNavigateToLogInFlow(context) {
     var username = 'MyUsername';
-    Navigator.pushReplacementNamed(context, (LOGGED_IN_FLOW + '/$username')); //Same as a reset in React Navigation (a navigation with a stack is : Navigator.pushNamed())
+    Navigator.pushReplacementNamed(context, (LOGIN_FLOW + '/$username')); //Same as a reset in React Navigation (a navigation with a stack is : Navigator.pushNamed())
   }
 
   @override
@@ -20,7 +20,7 @@ class LoggedOutFlow extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.exit_to_app),
         onPressed: () {
-          onNavigateToLoggedFlow(context);
+          onNavigateToLogInFlow(context);
         },
       ),
     );

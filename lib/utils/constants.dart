@@ -1,4 +1,4 @@
 const String APP_NAME = 'Boilerplate';
 
-const String LOGGED_OUT_FLOW = 'LoggedOutFlow';
-const String LOGGED_IN_FLOW = 'LoggedInFlow';
+const String LOGOUT_FLOW = 'LogOutFlow';
+const String LOGIN_FLOW = 'LogInFlow';

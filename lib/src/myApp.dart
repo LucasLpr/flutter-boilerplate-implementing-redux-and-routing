@@ -17,7 +17,7 @@ class Boilerplate extends StatelessWidget {
       store: store,
       child: new MaterialApp(
         title: APP_NAME,
-        initialRoute: LOGGED_OUT_FLOW,
+        initialRoute: LOGOUT_FLOW,
         onGenerateRoute: RouterApp.router.generator,
       ),
     );
